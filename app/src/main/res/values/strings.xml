@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Firebase3</string>
+    <string name="welcome_to_firebase">Welcome to Firebase.</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="welcome_create_your_profile">create your profile</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="textview">TextView</string>
+    <string name="update">Update</string>
+    <string name="create">Create</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="don_t_have_account_signup">Don\'t have account? Signup</string>
+    <string name="upd">Update</string>
+    <string name="todo">TODO</string>
+    <string name="signout">signout</string>
+    <string name="todo1">TODO</string>
+    <string name="user_profile">User Profile</string>
+    <string name="crete_update_your_profile">Crete / Update your profile Using Fire-base Realtime Database </string>
+    <string name="crud_operation_on_firebase_realtime_database"><b>CRUD operation on Firebase-Realtime_Database</b>></string>
+    <string name="sign_out">Sign out</string>
+</resources>
