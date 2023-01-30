@@ -21,7 +21,18 @@
         app:cardCornerRadius="20dp"
         android:layout_margin="30dp"
         >
-
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="match_parent"
+                app:civ_border_color="#5255F1"
+                app:civ_border_width="2dp"
+                android:layout_gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
 
                 />
             <TextView
@@ -42,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
 
                 />
             <TextView
@@ -51,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
 
                 />
             <TextView
@@ -60,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
 
                 />
             <TextView
@@ -69,9 +80,14 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
 
                 />
         </LinearLayout>
+
+    </LinearLayout>
+
+
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

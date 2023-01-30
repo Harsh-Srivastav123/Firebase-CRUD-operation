@@ -10,7 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
 
@@ -22,6 +26,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView name ,phone_no,github,description;
+        CircleImageView Dp;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -30,7 +35,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
             phone_no=itemView.findViewById(R.id.phonetext);
             github=itemView.findViewById(R.id.githubtext);
             description=itemView.findViewById(R.id.destext);
-
+            Dp=itemView.findViewById(R.id.profilePic);
         }
     }
 
@@ -49,6 +54,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
         holder.phone_no.setText(arrayList.get(position).Phone_no);
         holder.github.setText(arrayList.get(position).Github);
         holder.description.setText(arrayList.get(position).Description);
+        Picasso.get().load(arrayList.get(position).getImgUrl()).fit().centerCrop().into(holder.Dp);
 
     }
 

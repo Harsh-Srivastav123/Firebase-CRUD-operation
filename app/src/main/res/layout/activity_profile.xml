@@ -28,7 +28,6 @@
             android:layout_height="match_parent"
             android:layout_marginEnd="20dp"
             android:gravity="center|end"
-
             android:text="Enter the details"
             android:textColor="@color/white"
             android:textSize="45sp" />
@@ -37,7 +36,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView13"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_margin="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -46,14 +45,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newuser"
-        app:layout_constraintVertical_bias="0.050000012">
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/details_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="62dp"
             android:background="@drawable/no_background"
             android:gravity="center|start"
             android:hint="Name"
@@ -67,7 +65,7 @@
 
         android:id="@+id/cardView11"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_margin="30dp"
         android:layout_marginStart="30dp"
         app:cardBackgroundColor="#C8DEF6"
@@ -82,7 +80,6 @@
             android:id="@+id/details_phone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:background="@drawable/no_background"
             android:gravity="center|start"
             android:hint="Phone No (optional)"
@@ -96,7 +93,7 @@
 
         android:id="@+id/cardView10"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_margin="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -125,7 +122,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardviewdes"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_margin="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -185,6 +182,34 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView7"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:foreground="@drawable/photobg"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newuser"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload profile picture"
+        android:textColor="#5255F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
