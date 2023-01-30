@@ -74,11 +74,13 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(this, Profile.class);
         intent.putExtra("KEY",key);
         startActivity(intent);
+
     }
     public void signOut(View view){
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
 }

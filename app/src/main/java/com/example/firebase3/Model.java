@@ -1,16 +1,28 @@
 package com.example.firebase3;
 
+import android.net.Uri;
+
 public class Model {
 
-    String Name,Phone_no,Github,Description,status;
+    String Name,Phone_no,Github,Description,status,imgUrl;
 
-    public Model(String name, String phone_no, String github, String description, String status) {
+    public Model(String name, String phone_no, String github, String description, String status,String imgUrl)  {
         this.Name = name;
         this.Phone_no = phone_no;
         this.Github = github;
         this.Description = description;
         this.status=status;
+        this.imgUrl=imgUrl;
     }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
     public Model(){
 
     }

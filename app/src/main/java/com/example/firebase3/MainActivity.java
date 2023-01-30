@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth auth_login;
     private ProgressBar pb;
     private GoogleSignInClient mGoogleSignInClient;
+    boolean flag=false;
 
     @Override
     public void onStart() {
@@ -140,7 +141,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void signup(View v){
         Intent intent = new Intent(this, Register_user.class);
-        startActivity(intent);
-        finish();
+       if(!flag) {
+           startActivity(intent);
+           flag = true;
+       }
+       else {
+           startActivity(intent);
+           finish();
+       }
     }
 }
