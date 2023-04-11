@@ -17,5 +17,8 @@ by downloading the repository and install apk file.
 
 ## Screenshot
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Harsh-Srivastav123/Firebase-CRUD-operation/blob/main/f-1.jpg)
+![App Screenshot](https://github.com/Harsh-Srivastav123/Firebase-CRUD-operation/blob/main/f-2.jpg)
+![App Screenshot](https://github.com/Harsh-Srivastav123/Firebase-CRUD-operation/blob/main/f-3.jpg)
+![App Screenshot](https://github.com/Harsh-Srivastav123/Firebase-CRUD-operation/blob/main/f-4.jpg)
 
